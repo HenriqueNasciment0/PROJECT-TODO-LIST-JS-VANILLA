@@ -7,15 +7,17 @@ const listaOrdana = document.querySelector('#lista-tarefas');
 botao.addEventListener('click', adicionaItem);
 
 function adicionaItem(event) {
-  event.preventDefault();
+  /* event.preventDefault(); */
   
-  const divList = document.createElement('div');
-  divList.classList.add('todo-div');
+  /* const divList = document.createElement('div');
+  divList.classList.add('todo-div'); */
 
   const liList = document.createElement('li');
   liList.classList.add('todo-li');
-  liList.innerHTML = 'vai dar certo!';
-
-  divList.appendChild(liList);
-  listaOrdana.appendChild(divList);
+  liList.innerHTML = input.value;
+  input.value = null;
+  
+  /* divList.appendChild(liList); */
+  listaOrdana.appendChild(liList);
 }
+
