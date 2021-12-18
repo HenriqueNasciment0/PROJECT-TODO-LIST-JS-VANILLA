@@ -19,3 +19,10 @@ function marcaItem(e) {
 }
 
 listaOrdana.addEventListener('click', marcaItem);
+
+function desmarcaItem(e) {
+  listaOrdana.childNodes.forEach((itemDaLista) => itemDaLista.classList.remove('marcou'));
+  e.target.classList.add('marcou');
+}
+
+listaOrdana.addEventListener('click', desmarcaItem);
