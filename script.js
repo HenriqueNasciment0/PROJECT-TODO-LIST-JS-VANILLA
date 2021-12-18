@@ -1,23 +1,21 @@
 const input = document.querySelector('#texto-tarefa');
 const botao = document.querySelector('#criar-tarefa');
 const listaOrdana = document.querySelector('#lista-tarefas');
-
-/* console.log(listaOrdana); */
+const itemDaLista = document.querySelectorAll('.todo-li');
 
 botao.addEventListener('click', adicionaItem);
 
 function adicionaItem(event) {
-  /* event.preventDefault(); */
-  
-  /* const divList = document.createElement('div');
-  divList.classList.add('todo-div'); */
-
   const liList = document.createElement('li');
   liList.classList.add('todo-li');
-  liList.innerHTML = input.value;
+  liList.innerText = input.value;
   input.value = null;
-  
-  /* divList.appendChild(liList); */
+  input.focus();
   listaOrdana.appendChild(liList);
 }
 
+function marcaItem(e) {
+  e.target.classList.add('marcou');
+}
+
+listaOrdana.addEventListener('click', marcaItem);
