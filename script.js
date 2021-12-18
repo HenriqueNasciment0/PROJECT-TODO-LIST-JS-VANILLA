@@ -14,15 +14,21 @@ function adicionaItem(event) {
   listaOrdana.appendChild(liList);
 }
 
-function marcaItem(e) {
-  e.target.classList.add('marcou');
+function marcaItem(event) {
+  event.target.classList.add('marcou');
 }
 
 listaOrdana.addEventListener('click', marcaItem);
 
-function desmarcaItem(e) {
-  listaOrdana.childNodes.forEach((itemDaLista) => itemDaLista.classList.remove('marcou'));
-  e.target.classList.add('marcou');
+function desmarcaItem(event) {
+  listaOrdana.childNodes.forEach((itemDaLista) => { itemDaLista.classList.remove('marcou'); });
+  event.target.classList.add('marcou');
 }
 
 listaOrdana.addEventListener('click', desmarcaItem);
+
+function completaItem(event) {
+  event.target.classList.toggle('completed');
+}
+
+listaOrdana.addEventListener('dblclick', completaItem);
