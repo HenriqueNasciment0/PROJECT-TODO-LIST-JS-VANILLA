@@ -2,6 +2,7 @@ const input = document.querySelector('#texto-tarefa');
 const botao = document.querySelector('#criar-tarefa');
 const listaOrdana = document.querySelector('#lista-tarefas');
 const itemDaLista = document.querySelectorAll('.todo-li');
+const bntApagaTudo = document.querySelector('#apaga-tudo');
 
 botao.addEventListener('click', adicionaItem);
 
@@ -32,3 +33,9 @@ function completaItem(event) {
 }
 
 listaOrdana.addEventListener('dblclick', completaItem);
+
+function apagaTodasTarefas(event) {
+ listaOrdana.innerText = '';
+}
+
+bntApagaTudo.addEventListener('click', apagaTodasTarefas);
