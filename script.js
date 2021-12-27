@@ -35,7 +35,7 @@ function completaItem(event) {
 listaOrdana.addEventListener('dblclick', completaItem);
 
 function apagaTodasTarefas(event) {
- listaOrdana.innerText = '';
+listaOrdana.innerText = '';
 }
 
 bntApagaTudo.addEventListener('click', apagaTodasTarefas);
