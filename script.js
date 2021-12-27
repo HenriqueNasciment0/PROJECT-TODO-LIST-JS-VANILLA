@@ -3,6 +3,7 @@ const botao = document.querySelector('#criar-tarefa');
 const listaOrdana = document.querySelector('#lista-tarefas');
 const itemDaLista = document.querySelectorAll('.todo-li');
 const bntApagaTudo = document.querySelector('#apaga-tudo');
+const removeFinalizados = document.getElementById('remover-finalizados');
 
 botao.addEventListener('click', adicionaItem);
 
@@ -35,7 +36,17 @@ function completaItem(event) {
 listaOrdana.addEventListener('dblclick', completaItem);
 
 function apagaTodasTarefas(event) {
-listaOrdana.innerText = '';
+  listaOrdana.innerText = '';
 }
 
 bntApagaTudo.addEventListener('click', apagaTodasTarefas);
+
+function removerFinalizadosBtn() {
+  const completos = document.getElementsByClassName('completed');
+  for (let i = 0; i < completos.length;) {
+    /* completos[i].parentNode.removeChild(completos[i]); */
+    listaOrdana.removeChild(completos[i]);
+  }
+}
+
+removeFinalizados.addEventListener('click', removerFinalizadosBtn);
