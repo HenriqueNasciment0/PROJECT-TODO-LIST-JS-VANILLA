@@ -4,6 +4,7 @@ const listaOrdana = document.querySelector('#lista-tarefas');
 const itemDaLista = document.querySelectorAll('.todo-li');
 const bntApagaTudo = document.querySelector('#apaga-tudo');
 const removeFinalizados = document.getElementById('remover-finalizados');
+const salvarTarefas = document.getElementById('salvar-tarefas');
 
 botao.addEventListener('click', adicionaItem);
 
@@ -50,3 +51,15 @@ function removerFinalizadosBtn() {
 }
 
 removeFinalizados.addEventListener('click', removerFinalizadosBtn);
+
+function salvarTarefasLocal() {
+  const salvarTarefasConcluidas = localStorage.getItem('tarefas');
+  listaOrdana.innerHTML = salvarTarefasConcluidas;
+}
+salvarTarefasLocal();
+
+function salvarTarefasBtn() {
+  localStorage.tarefas = listaOrdana.innerHTML;
+}
+
+salvarTarefas.addEventListener('click', salvarTarefasBtn);
