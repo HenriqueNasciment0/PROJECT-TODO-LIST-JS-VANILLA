@@ -5,6 +5,8 @@ const itemDaLista = document.querySelectorAll('.todo-li');
 const bntApagaTudo = document.querySelector('#apaga-tudo');
 const removeFinalizados = document.getElementById('remover-finalizados');
 const salvarTarefas = document.getElementById('salvar-tarefas');
+const moverPCima = document.getElementById('mover-cima');
+const moverPBaixo = document.getElementById('mover-baixo');
 
 botao.addEventListener('click', adicionaItem);
 
@@ -63,3 +65,24 @@ function salvarTarefasBtn() {
 }
 
 salvarTarefas.addEventListener('click', salvarTarefasBtn);
+
+// p/ cima e p/ baixo com ajuda do código de Fernanda Guerra. //
+function moverElementosCima() {
+  const marcados = document.querySelector('.marcou');
+  if (!marcados) return;
+  if (marcados.previousElementSibling) {
+    marcados.parentElement.insertBefore(marcados, marcados.previousElementSibling);
+  }
+}
+
+moverPCima.addEventListener('click', moverElementosCima);
+
+function moverElementosBaixo() {
+  const marcados = document.querySelector('.marcou');
+  if (!marcados) return;
+  if (marcados.nextElementSibling) {
+    marcados.parentElement.insertBefore(marcados.nextElementSibling, marcados);
+  }
+}
+
+moverPBaixo.addEventListener('click', moverElementosBaixo);
