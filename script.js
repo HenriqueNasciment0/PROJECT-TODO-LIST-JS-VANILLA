@@ -7,6 +7,7 @@ const removeFinalizados = document.getElementById('remover-finalizados');
 const salvarTarefas = document.getElementById('salvar-tarefas');
 const moverPCima = document.getElementById('mover-cima');
 const moverPBaixo = document.getElementById('mover-baixo');
+const limparSelecionado = document.getElementById('remover-selecionado');
 
 botao.addEventListener('click', adicionaItem);
 
@@ -26,7 +27,9 @@ function marcaItem(event) {
 listaOrdana.addEventListener('click', marcaItem);
 
 function desmarcaItem(event) {
-  listaOrdana.childNodes.forEach((itemDaLista) => { itemDaLista.classList.remove('marcou'); });
+  listaOrdana.childNodes.forEach((itemDaLista) => {
+    itemDaLista.classList.remove('marcou');
+  });
   event.target.classList.add('marcou');
 }
 
@@ -71,7 +74,10 @@ function moverElementosCima() {
   const marcados = document.querySelector('.marcou');
   if (!marcados) return;
   if (marcados.previousElementSibling) {
-    marcados.parentElement.insertBefore(marcados, marcados.previousElementSibling);
+    marcados.parentElement.insertBefore(
+      marcados,
+      marcados.previousElementSibling
+);
   }
 }
 
@@ -86,3 +92,10 @@ function moverElementosBaixo() {
 }
 
 moverPBaixo.addEventListener('click', moverElementosBaixo);
+
+function limparSelecionadoBtn() {
+  const marcados = document.querySelector('.marcou');
+    listaOrdana.removeChild(marcados);
+}
+
+limparSelecionado.addEventListener('click', limparSelecionadoBtn);
