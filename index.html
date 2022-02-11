@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -28,6 +28,56 @@
     <button id="mover-baixo">p/ baixo</button>
     <button id="remover-selecionado">Limpar Selecionado</button>
     
+    <script src="script.js"></script>
+  </body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Minha Lista de Tarefas</h1></header>
+
+    <p id="funcionamento">
+      Clique duas vezes em um item para marcá-lo como completo
+    </p>
+
+    <div id="blockAction">
+      <input type="text" id="texto-tarefa" />
+
+      <button id="criar-tarefa" class="hoverBtn"><b>Adicionar</b></button>
+
+      <ol id="lista-tarefas"></ol>
+
+    </div>
+
+      <div id="blockBtn">
+
+      <button id="apaga-tudo" class="hoverBtn"><b>Apagar Tudo</b></button>
+
+      <button id="remover-finalizados" class="hoverBtn">
+        <b>Apagar Completos</b>
+      </button>
+
+      <button id="salvar-tarefas" class="hoverBtn">
+        <b>Salvar Tarefas</b>
+      </button>
+
+      <button id="mover-cima" class="hoverBtn"><b>Cima</b></button>
+
+      <button id="mover-baixo" class="hoverBtn"><b>Baixo</b></button>
+
+      <button id="remover-selecionado" class="hoverBtn">
+        <b>Remover Selecionado</b>
+      </button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

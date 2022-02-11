@@ -1,33 +1,41 @@
-* {
- /*  margin: 0%;
-  padding: 0%; */
+h1, p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  
+}
+ body {
+  background-image: linear-gradient(rgb(31, 160, 70), rgb(94, 108, 235));
+  color: white;
 }
 
-body {
-    
-}
-
-#criar-tarefa {
+.hoverBtn:hover {
+  color: white;
+  background-color: rgb(47, 29, 150);
 }
 
 .todo-li {
-  list-style: none; 
+  list-style: none;
 }
 
-.marcou {
+.marcado {
   background-color: rgb(128, 128, 128);
 }
 
 .completed {
-text-decoration: line-through solid rgb(0, 0, 0);
+  text-decoration: line-through solid rgb(0, 0, 0);
+
 }
 
-#apaga-tudo {
-  display: inline-block;
-  width: 80px;
-  height: 20px;
-  border: solid black 1px;
-  border-radius: 5px;
-  margin-top: 10px;
+#blockBtn {
+  margin-left: 370px;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 30px;
+}
 
+#blockAction {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-top: 30px;
 }
