@@ -1,13 +1,16 @@
-<!-- <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
     <header>
       <h1>Minha Lista de Tarefas</h1>
     </header>
@@ -16,48 +19,17 @@
       Clique duas vezes em um item para marcá-lo como completo
     </p>
 
-    <input type="text" id="texto-tarefa" />
-    <button id="criar-tarefa">Adicionar</button>
-
-    <ol id="lista-tarefas"></ol>
-
-    <button id="apaga-tudo">Apagar</button>
-    <button id="remover-finalizados">Remover Finalizados</button>
-    <button id="salvar-tarefas">Salvar Tarefas</button>
-    <button id="mover-cima">p/ cima</button>
-    <button id="mover-baixo">p/ baixo</button>
-    <button id="remover-selecionado">Limpar Selecionado</button>
-    
-    <script src="script.js"></script>
-  </body>
-</html>  -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header><h1>Minha Lista de Tarefas</h1></header>
-
-    <p id="funcionamento">
-      Clique duas vezes em um item para marcá-lo como completo
-    </p>
-
     <div id="blockAction">
-      <input type="text" id="texto-tarefa" />
+      <input type="text" id="texto-tarefa" placeholder="digite uma tarefa" />
 
       <button id="criar-tarefa" class="hoverBtn"><b>Adicionar</b></button>
-
-      <ol id="lista-tarefas"></ol>
-
     </div>
 
-      <div id="blockBtn">
+    <div class="list">
+      <ol id="lista-tarefas"></ol>
+    </div>
+
+    <div id="blockBtn">
 
       <button id="apaga-tudo" class="hoverBtn"><b>Apagar Tudo</b></button>
 
@@ -77,7 +49,13 @@
         <b>Remover Selecionado</b>
       </button>
     </div>
+  </div>
+  <div class="footer">
+    <footer>
+      <p>Desenvolvido por <a href="https://github.com/HenriqueNasciment0">Henrique Nascimento</a></p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
