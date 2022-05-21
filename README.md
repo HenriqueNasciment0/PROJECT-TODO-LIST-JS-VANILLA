@@ -5,7 +5,7 @@ Projeto feito usando JS puro, HTML5 e CSS3.
 Pode clonar o repositório por copiar o link do projeto no botão CODE aqui no GitHub e então dar o comando
 "git clone <link do repositório>" no terminal.
 
-Ou pode acessar pelo link a seguir --> todolist-henriquendev.netlify.app
+Ou pode acessar pelo link a seguir --> (https://todolist-henriquendev.netlify.app/)
 
 Será necessário instalar as dependências com o comando "npm install" no terminal, parar rodar os testes do projeto.
 
