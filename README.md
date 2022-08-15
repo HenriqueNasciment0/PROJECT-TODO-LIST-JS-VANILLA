@@ -22,4 +22,8 @@ para ter a função do cursor como pointer e um efeito hover sobre as tarefas li
 ***Esse foi um dos primeiros projetos que realizei com JS puro e lembro que tive dificuldades na época. Agora já com
 novos conhecimentos adquiridos, é muito legal ver as novas possibilidades que tenho para resolver esse mesmo projeto.***
 
-contatos: hsncorretor@gmail.com / WhatsApp e Telegram +55 (85) 997833-1276
+<div> 
+  <a href = "mailto:hsncorretor@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/henriquen-dev/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+    <a href="https://instagram.com/henrique.s.nasc" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
+</div>
